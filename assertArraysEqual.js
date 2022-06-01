@@ -5,22 +5,23 @@ function eqArrays(arr1, arr2) {
     // use if statement to compare the two arrays given.. use [i] to loop through each array
     if(arr1[i] !== arr2[i]) {
       // return false
-      console.log("false");
       return false;
     }
   }
-  // return true
-  console.log("true");
+  // return true;
   return true;
 };
 
 function assertArraysEqual(arr1, arr2) {
+  // refer to previous eqArrays function to console log message
   if (eqArrays(arr1, arr2)) {
     console.log(`Assertion Passed: ${arr1} === ${arr2}`);
   } else {
     console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
+
+// test out the function
 assertArraysEqual([1, 2, 3], [1, 2, 3]) // => true
 assertArraysEqual([1, 2, 3], [3, 2, 1]) // => false
 
