@@ -12,12 +12,12 @@ function eqArrays(arr1, arr2) {
   return true;
 };
 
-function assertArraysEqual(actual, expected) {
+function assertArraysEqual(array1, array2) {
   // refer to previous eqArrays function to console log message
-  if (eqArrays(actual, expected)) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
+  if (eqArrays(array1, array2)) {
+    console.log(`Assertion Passed: ${array1} === ${array2}`);
   } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`Assertion Failed: ${array1} !== ${array2}`);
   }
 };
 // create a function without, with 2 parameters given
