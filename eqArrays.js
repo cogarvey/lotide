@@ -10,7 +10,7 @@ assertEqual(1, 1);
 assertEqual("one", 1);
 
 // create a function with eqArrays with 2 parameters
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   // use a loop to go through each array
   for(let i = 0; i < arr1.length; i++) {
     // use if statement to compare the two arrays given.. use [i] to loop through each array

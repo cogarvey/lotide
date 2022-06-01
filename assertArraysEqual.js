@@ -1,5 +1,5 @@
 // create a function with eqArrays with 2 parameters
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   // use a loop to go through each array
   for(let i = 0; i < arr1.length; i++) {
     // use if statement to compare the two arrays given.. use [i] to loop through each array
@@ -12,7 +12,7 @@ function eqArrays(arr1, arr2) {
   return true;
 };
 
-function assertArraysEqual(arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   // refer to previous eqArrays function to console log message
   if (eqArrays(arr1, arr2)) {
     console.log(`Assertion Passed: ${arr1} === ${arr2}`);
