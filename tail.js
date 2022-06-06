@@ -1,17 +1,15 @@
-const assertEqual = function(actual, expexted) {
-  if (actual === expexted) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expexted}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expexted}`);
+const assertEqual = require('./assertEqual');
+
+
+
+const tail = function(array) {
+  if (array.length === 0) {
+    return [];
   }
-};
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("one", 1);
-
-
-function tail(words) {
-  return (words.length, 3);
+  if (array.length === 1) {
+    return array;
+  }
+  return array.slice(1);
 }
 
-assertEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), 3);
+module.exports = tail;
