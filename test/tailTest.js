@@ -3,11 +3,6 @@ const assertArraysEqual = require('../assertArraysEqual');
 const { assert } = require('chai');
 
 
-// assertArraysEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]); // should pass
-// assertArraysEqual(tail(["Hello", "im", "Colleen"]), ["Hello"]); // should fail
-// assertArraysEqual(tail([]), []);
-// assertArraysEqual(tail(["Hello"]), ["Hello"]);
-
 describe('#tail', () => {
   it("should return ['Lighthouse', 'Labs'] when passed ['Yo Yo', 'Lighthouse', 'Labs']", () => {
     assert.deepEqual(tail(['Yo Yo', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
