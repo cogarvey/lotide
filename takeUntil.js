@@ -56,3 +56,5 @@ console.log(results2);
 
 assertArraysEqual(results1, data1.slice(0, 5));
 assertArraysEqual(results2, data2.slice(0, 4));
+
+module.exports = takeUntil;

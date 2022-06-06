@@ -49,3 +49,5 @@ assertEqual(test2, testSubject2); // should pass
 let test3 = findKey(object, x => x.stars === 6);
 let testSubject3 = "Ora";
 assertEqual(test3, testSubject3); // should fail
+
+module.exports = findKey;

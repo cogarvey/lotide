@@ -51,3 +51,5 @@ console.log(results2);
 const results3 = map(words, word => word.length);
 assertArraysEqual(results3, [6, 7, 2, 5, 3]);
 console.log(results3);
+
+module.exports = map;
