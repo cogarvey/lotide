@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@cogarvey/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a modular collection of functions that operate on data, namely Arrays and Objects",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/cogarvey/lotide.git"
   },
-  "author": "",
+  "author": "Colleen Garvey <colleenellengarvey@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cogarvey/lotide/issues"
